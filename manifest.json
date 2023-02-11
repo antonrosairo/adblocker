@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "AdBlocker",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["adblock.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "author": "Your Name",
+  "homepage_url": "https://github.com/antonrosairo",
+  "description": "This extension helps block all ads on webpages for a better browsing experience.(inclouding youtube)"
+}
